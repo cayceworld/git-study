@@ -1,0 +1,29 @@
+html-validate:
+
+cayce@CAYCEDESKTOP MINGW64 ~/OneDrive/Документы/Dev/Bootcamp WD PLUS 2021-10/learning-git-2 (master)
+$ html-validate index.html
+
+C:\Users\cayce\OneDrive\Документы\Dev\Bootcamp WD PLUS 2021-10\learning-git-2\index.html
+   1:1  warning  Usage of deprecated rule "void"                                               deprecated-rule
+  12:1  error    Trailing whitespace                                                           no-trailing-whitespace
+  14:4  error    <hcas1> is not a valid element name                                           element-name
+  15:3  error    Mismatched close-tag, expected '</hcas1>' but found '</div>'                  close-order
+  87:2  error    Mismatched close-tag, expected '</div>' but found '</body>'                   close-order
+  89:2  error    Mismatched close-tag, expected '</body>' but found '</html>'                  close-order
+  90:1  error    Missing close-tag, expected '</html>' but document ended before it was found  close-order
+
+✖ 7 problems (6 errors, 1 warning)
+
+More information:
+  https://html-validate.org/rules/deprecated-rule.html
+  https://html-validate.org/rules/no-trailing-whitespace.html
+  https://html-validate.org/rules/element-name.html
+  https://html-validate.org/rules/close-order.html
+
+utoprefixer:
+
+  cayce@CAYCEDESKTOP MINGW64 ~/OneDrive/Документы/Dev/Bootcamp WD PLUS 2021-10/learning-git-2 (master)
+$ cd css
+
+cayce@CAYCEDESKTOP MINGW64 ~/OneDrive/Документы/Dev/Bootcamp WD PLUS 2021-10/learning-git-2/css (master)
+$ autoprefixer-cli -o style.prefixed.css style.css
